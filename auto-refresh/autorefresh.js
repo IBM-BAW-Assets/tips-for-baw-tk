@@ -2,6 +2,7 @@ var _this = this;
 var autoRefresh = false;
 var autoRefreshInterval = 10;
 var refreshActive = false;
+var refreshInitNeeded = true;
 var intervalID = -1;
 var logON = false;
 
@@ -10,14 +11,13 @@ this.initAutoRefresh = function() {
 	if (logON)
 		console.log("initAutoRefresh()");
 	
-	_this.ui.get("refreshInt").setValue(autoRefreshInterval);
-	_this.ui.get("refreshCheckbox").setChecked(true);
-	
-	if (! refreshActive) {
+	if (refreshInitNeeded) {
+		_this.ui.get("refreshInt").setValue(autoRefreshInterval);
+		_this.ui.get("refreshCheckbox").setChecked(true);
 		_this.setAutoRefresh();
+		refreshInitNeeded = false;
 		
 	}
-
 }
 
 this.setAutoRefresh = function() {
@@ -52,10 +52,7 @@ this.setAutoRefresh = function() {
 	
 		intervalID = _this.startAutoRefresh(autoRefreshInterval)
 	}
-	else {
-	
-		_this.stopAutoRefresh(intervalID);
-	}				
+				
 }
 
 this.startAutoRefresh = function(interval) {
@@ -81,5 +78,3 @@ this.refresh = function() {
 		console.log("refresh()");
 	_this.getCounts();
 }
-
- 
