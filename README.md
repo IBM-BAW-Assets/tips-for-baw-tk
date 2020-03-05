@@ -5,3 +5,5 @@ This includes examples for
   1. Deferred Sections
   2. Service Flow Execution Models From UI
   3. Simplifying Debugging
+  4. Auto refresh 
+  5. Sponning Icons on the page
