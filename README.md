@@ -6,4 +6,5 @@ This includes examples for
   2. Service Flow Execution Models From UI
   3. Simplifying Debugging
   4. Auto refresh 
-  5. Sponning Icons on the page
+  5. Spinning Icons on the page
+  6. Implementing Decision Tasks
