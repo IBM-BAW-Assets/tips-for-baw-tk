@@ -7,6 +7,5 @@ for(var i = 0; i < tw.local.originalTeam.members.length - 1; i++){
 	tw.local.filteredTeam.members[i] = tw.local.originalTeam.members[i];
 }
 
-
 //filter from full team to only one inputted user
 //tw.local.filteredTeam.members[0] = tw.local.user;
