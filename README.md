@@ -9,3 +9,4 @@ This includes examples for
   5. Spinning Icons on the page
   6. Implementing Decision Tasks
   7. Team Filtering and Direct Assignment
+  8. Using ODM Decision Service
